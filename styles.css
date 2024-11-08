@@ -2,69 +2,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    max-width: 800px;
-    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     padding: 20px;
 }
 
-header {
+.header-info,
+.name-date {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid black;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
-header div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.title {
+    text-align: center;
+    margin: 10px 0;
 }
 
 h1 {
     color: darkgreen;
+    font-size: 1.8em;
 }
 
-h2 {
-    margin: 20px 0 10px;
+main {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 section {
     margin-bottom: 20px;
 }
 
-.question-answer, .images .image-box {
-    border: 1px solid black;
+.content-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.sub-question,
+.image,
+.diagram {
+    border: 1px solid #ddd;
     padding: 10px;
+    width: 48%;
+}
+
+.image img,
+.diagram img {
+    max-width: 100%;
+    display: block;
     margin: 10px 0;
 }
 
-.images {
-    display: flex;
-    gap: 10px;
-}
-
-.image-box {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-}
-
-.references ul {
-    list-style-type: none;
-    padding-left: 10px;
-}
-
-footer {
+.caption {
     font-size: 0.8em;
-    margin-top: 10px;
-    color: gray;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 5px;
+}
+
+.main-question-answer,
+.guidelines,
+.references {
+    border-top: 2px solid #ddd;
+    padding-top: 15px;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+li {
+    margin-bottom: 5px;
 }
