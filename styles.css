@@ -6,7 +6,7 @@
 }
 
 body {
-    max-width: 800px;
+    width: 800px;
     margin: 20px auto;
     padding: 20px;
 }
@@ -20,51 +20,59 @@ header {
     margin-bottom: 20px;
 }
 
-header div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.header-left, .header-right {
+    width: 20%;
+    text-align: center;
 }
 
-h1 {
-    color: darkgreen;
+.header-center {
+    text-align: center;
+    width: 60%;
 }
 
-h2 {
-    margin: 20px 0 10px;
+header h1 {
+    color: green;
+    font-size: 1.5em;
 }
 
-section {
-    margin-bottom: 20px;
+.intro h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.question-answer, .images .image-box {
+.text-box, .image-box .image, .image-box .diagram, .main-answer, .references, .guidelines {
     border: 1px solid black;
     padding: 10px;
     margin: 10px 0;
 }
 
-.images {
+.image-box {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
-.image-box {
-    flex: 1;
+.image, .diagram {
+    width: 48%;
+    height: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    height: 100px;
+    align-items: center;
+    text-align: center;
 }
 
-.references ul {
+.image-box footer, .text-box footer {
+    font-size: 0.8em;
+    color: gray;
+    text-align: left;
+}
+
+.references ul, .guidelines ul {
     list-style-type: none;
     padding-left: 10px;
 }
 
-footer {
-    font-size: 0.8em;
-    margin-top: 10px;
-    color: gray;
+.references ul li, .guidelines ul li {
+    margin-bottom: 5px;
 }
