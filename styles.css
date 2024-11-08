@@ -2,73 +2,69 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
 }
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid black;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-.subject-class {
-    font-size: 0.9em;
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    font-size: 1.5em;
     color: darkgreen;
-    text-align: center;
 }
 
-.name-date {
-    font-size: 0.9em;
-    text-align: right;
+h2 {
+    margin: 20px 0 10px;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.intro, .main-answer, .guidelines, .references {
+section {
     margin-bottom: 20px;
 }
 
-.sub-tasks {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.left, .right {
-    width: 48%;
-}
-
-.right .image, .right .diagram {
-    border: 1px solid #ddd;
+.question-answer, .images .image-box {
+    border: 1px solid black;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
-.right img {
-    width: 100%;
-    height: auto;
+.images {
+    display: flex;
+    gap: 10px;
 }
 
-.guidelines ul, .references ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.image-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
 }
 
-h2, h3, h4 {
-    margin-bottom: 10px;
+.references ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+footer {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: gray;
 }
