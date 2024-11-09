@@ -42,7 +42,7 @@ main h2 {
     margin-bottom: 20px;
 }
 
-.text-block, .image, .diagram {
+.text-block, .image, .diagram, .antwort-ausgangsfrage {
     border: 1px solid #000;
     padding: 15px;
     position: relative;
@@ -85,4 +85,12 @@ main h2 {
 .text-block b {
     color: darkblue;
     font-style: italic;
+}
+/* Blocksatz für Absätze */
+p {
+    text-align: justify;
+}
+/* Blocksatz für die Klasse "justified-text" */
+.justified-text {
+    text-align: justify;
 }
